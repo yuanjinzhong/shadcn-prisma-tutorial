@@ -14,23 +14,34 @@ pnpm dev
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+# shadcn
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+npx shadcn@latest init 安装shadcn 客户端工具
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+npx shadcn@latest add sidebar 安装侧边栏组件
 
-## Learn More
+# prisma 常用命令
 
-To learn more about Next.js, take a look at the following resources:
+## npm install prisma @prisma/client
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+安装
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## npx prisma --help    or   prisma --help
 
-## Deploy on Vercel
+查看帮助
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## npx prisma db pull
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+若数据库里面已经有表结构，则这行该命令将表结构schema取到本地的 `/prisma/schema.prisma`目录
+
+## prisma generate
+
+生成客户端代码（类似mybatis生成mapper接口）
+
+## prisma db push
+
+将修改的表结构推送到数据库
+
+## prisma studio
+
+本地启动的数据库控制面
