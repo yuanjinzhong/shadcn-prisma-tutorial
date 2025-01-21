@@ -30,6 +30,10 @@ npx shadcn@latest add sidebar 安装侧边栏组件
 
 查看帮助
 
+## prisma init
+
+生成 prisma/schema.prisma 文件
+
 ## npx prisma db pull
 
 若数据库里面已经有表结构，则这行该命令将表结构schema取到本地的 `/prisma/schema.prisma`目录
